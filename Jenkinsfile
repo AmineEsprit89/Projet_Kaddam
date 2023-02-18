@@ -24,7 +24,7 @@ pipeline {
         
         stage("SRC Analysis Testing") {
             steps {
-              sh"./mvnw sonar:sonar -Dsonar.host.url=http://172.17.0.3:9000 -Dsonar.login=admin -Dsonar.password=123456"
+              sh"./mvnw sonar:sonar -Dsonar.host.url=http://172.17.0.2:9000 -Dsonar.login=admin -Dsonar.password=123456"
             }
         }
         
