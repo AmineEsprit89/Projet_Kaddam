@@ -31,7 +31,7 @@ pipeline {
         
         stage("Build Docker image") {
             steps {
-                sh "docker build -t spring-image "
+                sh "./mvnw docker build -t spring-image "
             }
         }
 	
