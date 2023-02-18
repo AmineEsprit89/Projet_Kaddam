@@ -28,13 +28,14 @@ pipeline {
             }
         }
         
-        /*
+        
         stage("Build Docker image") {
             steps {
-                sh "..............."
+                sh "docker build -t spring-image "
             }
         }
-
+	
+	/*
         stage("Deploy Artifact to private registry") {
             steps {
                 sh "..............."
