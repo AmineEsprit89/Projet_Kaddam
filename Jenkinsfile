@@ -31,8 +31,8 @@ pipeline {
         
         stage("Build Docker image") {
             steps {
-            	sh "chmod 777 /var/jenkins_home/workspace/Projet_Kaddam@tmp/durable-c976f4c6/script.sh"
-                sh "./ sudo docker build -t spring-image . "
+            	//sh "chmod 777 /var/jenkins_home/workspace/Projet_Kaddam@tmp/durable-c976f4c6/script.sh"
+                sh "docker build -t kaddam/kaddam . "
             }
         }
 	
