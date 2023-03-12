@@ -1,6 +1,6 @@
 FROM openjdk:8-jdk-alpine
-EXPOSE 8080
+EXPOSE 9090
 # ARG JAR_FILE=target/*.jar
-ADD target/kaddam.jar kaddam.jar
+ADD target/*.jar
 COPY ${JAR_FILE} app.jar
-ENTRYPOINT ["java","-jar","/kaddam.jar"]
+ENTRYPOINT ["java","-jar","/app.jar"]
